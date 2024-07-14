@@ -7,16 +7,25 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         //************Q1***************************
-     /* String[]arr={"ca","dfghjk", "dog", "red", "is", "am" };
-        String pointer=arr[0];
-        for(String loop:arr) {
-            if (pointer.length() < loop.length()) {
-                System.out.print(loop+" ");
-                pointer = loop;
-
+     /* String[] arr = {"cat", "dog", "red", "is", "am"};
+            String pointer = arr[0];
+            int maxLength = 0;
+            
+            for (String loop : arr) {
+                if (loop.length() > maxLength) {
+                    maxLength = loop.length();
+                }
             }
-
-        }*/
+            List<String> longestWords = new ArrayList<>();
+            for (String loop : arr) {
+                if (loop.length() == maxLength) {
+                    longestWords.add(loop);
+                }
+            }
+            
+            for (String word : longestWords) {
+                System.out.print(word + " ");
+            }*/
 
 //*****************Q2************************
         /*Scanner input=new Scanner(System.in);
